@@ -1,0 +1,49 @@
+# --- Xilinx Vivado & FPGA Tools ---
+# Ignore log and journal files
+*.log
+*.jou
+*.str
+*.dir
+
+# Ignore Vivado temporary workspace and runs
+.Xil/
+*.pb
+*.jou
+*.log
+*.prm
+*.sh
+*.ini
+*.xml
+
+# Ignore synthesis/implementation output (keep your repo light)
+*.bit
+*.bin
+*.mcs
+*.bit
+*.gen
+*.dcp
+
+# --- Simulation Tools (Icarus, ModelSim, VCS) ---
+# Ignore simulation snapshots and wave data
+*.vcd
+*.wdb
+*.vvp
+a.out
+work/
+transcript
+vsim.wlf
+
+# --- System & OS Junk ---
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.DS_Store
+*~
+*.swp
+
+# --- Documentation Junk ---
+# Ignore PDF or large doc files if you prefer to keep them local
+# *.pdf
