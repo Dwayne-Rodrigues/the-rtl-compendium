@@ -13,13 +13,12 @@ The AND gate follows the standard Boolean operation where the output is high onl
 **Boolean Equation:** $$Y = A \cdot B$$
 
 ### Truth Table
-| Input | Output |
-| A | B |   Y    |
-|---|---|--------|
-| 0 | 0 |   0    |
-| 0 | 1 |   0    |
-| 1 | 0 |   0    |
-| 1 | 1 |   1    |
+| Input A | Input B | Output Y |
+|---------|---------|----------|
+|    0    |    0    |    0     |
+|    0    |    1    |    0     |
+|    1    |    0    |    0     |
+|    1    |    1    |    1     |
 
 ---
 
@@ -40,6 +39,9 @@ To ensure logic correctness, a testbenches were used to sweep through all input 
 
 ### Behavioral Waveform & Tcl Console Output
 The simulation below confirms that the output `y` transitions to high only when both `a` and `b` are asserted.
+**Verilog Waveform:**
 ![Verilog Waveform](verilog/waveform_verilog.png)
+**VHDL Waveform:**
 ![VHDL Waveform](vhdl/waveform_vhdl.png)
+**SystemVerilog Waveform:**
 ![SystemVerilog Waveform](systemverilog/waveform_systemverilog.png)
