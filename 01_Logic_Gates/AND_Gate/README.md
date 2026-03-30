@@ -1,6 +1,6 @@
 # AND Gate Logic Primitive
 
-This module implements a basic 2-input AND gate across multiple HDLs. The design has been verified through RTL elaboration and behavioral simulation using **Xilinx Vivado 2024.2**.
+This module implements a basic 2-input AND gate across multiple HDLs. The design has been verified through RTL elaboration and behavioral simulation using **AMD Vivado 2024.2**.
 
 ## 1. Hardware Schematic (RTL Analysis)
 The following schematic was generated using the **Vivado Elaborated Design** tool. It represents the logical mapping of the Verilog code into generic hardware primitives.
