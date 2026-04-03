@@ -17,7 +17,7 @@ architecture behavioral of tb_and_gate is
 
     -- Component Declaration for the UUT
     component and_gate
-        Port ( a : in  STD_LOGIC;
+        port ( a : in  STD_LOGIC;
                b : in  STD_LOGIC;
                y : out STD_LOGIC);
     end component;
