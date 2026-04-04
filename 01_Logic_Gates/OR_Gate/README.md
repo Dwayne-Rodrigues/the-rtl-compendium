@@ -1,9 +1,9 @@
 # OR Gate Logic Primitive
 
-This module implements a basic 2-input OR gate, a fundamental component of the **RTL Compendium**. The design has been verified through RTL elaboration and behavioral simulation using **AMD Vivado 2024.2**.
+This module implements a basic 2-input OR gate across multiple HDLs. The design has been verified through RTL elaboration and behavioral simulation using **AMD Vivado 2024.2**.
 
 ## 1. Hardware Schematic (RTL Analysis)
-The following schematic was generated using the **Vivado Elaborated Design** tool. It represents the logical mapping of the HDL code into generic hardware primitives. Notice that while the inputs and buffers remain identical to the AND gate, the central primitive is now inferred as an `RTL_OR`.
+The following schematic was generated using the **Vivado Elaborated Design** tool. It represents the logical mapping of the HDL code into generic hardware primitives.
 
 ![OR Gate RTL Schematic](schematic.png)
 
@@ -23,7 +23,7 @@ The OR gate follows the standard Boolean operation where the output is high if a
 ---
 
 ## 3. Implementation
-The logic is implemented across three major Hardware Description Languages to demonstrate cross-platform compatibility.
+This repository provides the implementation in three major Hardware Description Languages (HDLs).
 
 * **[Verilog Source](verilog/or_gate.v)**
 * **[VHDL Source](vhdl/or_gate.vhd)**
@@ -32,10 +32,19 @@ The logic is implemented across three major Hardware Description Languages to de
 ---
 
 ## 4. Verification & Simulation
-Exhaustive verification was performed by cycling through all $2^2 = 4$ possible input combinations.
+To ensure logic correctness, testbenches were used to sweep through all input combinations ($2^2 = 4$).
+* **[Verilog Testbench](verilog/tb_or_gate.v)**
+* **[VHDL Testbench](vhdl/tb_or_gate.vhd)**
+* **[SystemVerilog Testbench](systemverilog/tb_or_gate.sv)**
 
-### Behavioral Waveform
-The simulation waveform confirms that the output `y` stays high for all states except when both `a` and `b` are low.
-![OR Gate Waveform](verilog/waveform_verilog.png)
-![OR Gate Waveform](vhdl/waveform_vhdl.png)
-![OR Gate Waveform](systemverilog/waveform_systemverilog.png)
+### Behavioral Waveform & Tcl Console Output
+The simulations below confirm that the output `y` stays high for all states except when both `a` and `b` are low.
+
+**Verilog Waveform:**
+![Verilog Waveform](verilog/waveform_verilog.png)
+
+**VHDL Waveform:**
+![VHDL Waveform](vhdl/waveform_vhdl.png)
+
+**SystemVerilog Waveform:**
+![SystemVerilog Waveform](systemverilog/waveform_systemverilog.png)
