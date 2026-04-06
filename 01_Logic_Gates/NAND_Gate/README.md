@@ -1,5 +1,5 @@
 # NAND Gate Logic Primitive
-
+ 
 This module implements a 2-input NAND (Not-AND) gate, a "Universal Gate" in digital logic across multiple HDLs. The design has been verified through RTL elaboration and behavioral simulation using **AMD Vivado 2024.2**.
 
 ## 1. Hardware Schematic (RTL Analysis)
