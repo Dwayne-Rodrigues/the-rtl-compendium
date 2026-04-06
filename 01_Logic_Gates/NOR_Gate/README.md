@@ -1,5 +1,5 @@
 # NOR Gate Logic Primitive
-
+ 
 This module implements a 2-input NOR (Not-OR) gate, which is functionally universal in digital logic design across multiple HDLs. The design has been verified through RTL elaboration and behavioral simulation using **AMD Vivado 2024.2**.
 
 ## 1. Hardware Schematic (RTL Analysis)
