@@ -13,7 +13,7 @@ In the RTL view, the XOR gate is represented by its distinct symbol—an OR gate
 The XOR gate acts as an "Inequality Detector." It outputs a High (1) if exactly one input is High. If both are the same, the output is Low (0).
 
 **Boolean Equation:** $$Y = A \oplus B$$
-*(Expanded form: $$Y = A\overline{B} + \overline{A}B$$)*
+(Expanded form: $Y = A\overline{B} + \overline{A}B$)
 
 ### Truth Table
 | Input A | Input B | Output Y |
