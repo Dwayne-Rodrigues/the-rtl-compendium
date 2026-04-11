@@ -1,7 +1,7 @@
 # XOR Gate Logic Primitive
 
 This module implements a 2-input XOR (Exclusive-OR) gate across multiple HDLs. Unlike a standard OR gate, the XOR output is High only when the inputs are logically different. This design has been verified through RTL elaboration and behavioral simulation using **AMD Vivado 2024.2**.
-
+ 
 ## 1. Hardware Schematic (RTL Analysis)
 The following schematic was generated using the **Vivado Elaborated Design** tool. It represents the logical mapping of the HDL code into generic hardware primitives.
 
