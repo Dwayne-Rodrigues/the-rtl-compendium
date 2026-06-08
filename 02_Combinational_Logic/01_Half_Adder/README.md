@@ -13,6 +13,7 @@ The following schematic was generated using the **Vivado Elaborated Design** too
 The Half Adder computes the addition of two single-bit binary numbers ($A$ and $B$), producing a 1-bit $Sum$ and a 1-bit Carry out ($C_{out}$).
 
 **Boolean Equations:** $$Sum = A \oplus B$$
+
 $$C_{out} = A \cdot B$$
 
 ### Truth Table
